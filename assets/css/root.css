@@ -6,8 +6,8 @@
     --fs-md: 18px;
     --fs-mmd: 24px;
     --fs-lg: 36px;
-    --fs-llg: 72px;
-    --fs-xl: 80px;
+    --fs-llg: 32px;
+    --fs-xl: 38px;
     --fs-xxl: 44px;
 
     /* font-color */
@@ -22,20 +22,27 @@
 @media(min-width:576px){
     :root{
         --fs-xxl: 80px;
+        --fs-llg: 36px;
+        --fs-xl: 55px;
     }
 }
 @media(min-width:768px) {
     :root {
         --fs-xxl: 107px;
+        --fs-llg: 48px;
+        --fs-xl: 70px;
     }
 }
 @media(min-width:992px) {
     :root {
         --fs-xxl: 130px;
+        --fs-llg: 60px;
+        --fs-xl: 80px;
     }
 }
 @media(min-width:1200px) {
     :root {
         --fs-xxl: 157px;
+        --fs-llg: 72px;
     }
 }
