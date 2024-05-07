@@ -1,0 +1,41 @@
+:root {
+    /* font-size */
+    --fs-xxsm: 12px;
+    --fs-xsm: 14px;
+    --fs-sm: 16px;
+    --fs-md: 18px;
+    --fs-mmd: 24px;
+    --fs-lg: 36px;
+    --fs-llg: 72px;
+    --fs-xl: 80px;
+    --fs-xxl: 44px;
+
+    /* font-color */
+    --fc-white: #ffffff;
+    --fc-black: #000000;
+    --fc-yellow: #ffd600;
+    --fc-green: #00a106;
+    --fc-red: #ff1300;
+    --fc-secondary-red: #ff0000;
+    --fc-brown: #70675f;
+}
+@media(min-width:576px){
+    :root{
+        --fs-xxl: 80px;
+    }
+}
+@media(min-width:768px) {
+    :root {
+        --fs-xxl: 107px;
+    }
+}
+@media(min-width:992px) {
+    :root {
+        --fs-xxl: 130px;
+    }
+}
+@media(min-width:1200px) {
+    :root {
+        --fs-xxl: 157px;
+    }
+}
