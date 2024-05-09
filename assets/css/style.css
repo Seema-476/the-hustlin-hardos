@@ -528,6 +528,9 @@
         padding: 32px 32px 43px 30px !important;
         position: relative;
 }
+.bordertop{
+    border-top: 2px solid var(--fc-black);
+}
 .acctext{
     color: var(--fc-black);
         font-family: 'Noto Serif', sans-serif;
@@ -547,7 +550,7 @@
     color: var(--fc-black);
 }
 
-.accordion .accordion-item .accordion-header .accordion-button:focus{
+.accordion .accordion-item .accordion-header .accordion-button.active{
     padding-bottom: 16px !important;
 }
 
@@ -561,7 +564,8 @@
     --bs-accordion-border-radius: 0 !important;
 }
 .accordion-item{
-    border: 2px solid var(--fc-black);
+    border-right: 2px solid var(--fc-black);
+    border-left: 2px solid var(--fc-black);
 }
 .accordion-body {
     padding: 0 25px 24px 25px!important;
@@ -571,6 +575,7 @@
     outline: 0;
     box-shadow: none!important;
 }
+
 .footer{
     color: var(--fc-black);
     font-family: 'Noto Serif',sans-serif;
