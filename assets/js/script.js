@@ -48,6 +48,48 @@ $('.responsive').slick({
         }
     ]
 });
+$('.responsive2').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    // autoplay: true, 
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    nextArrow: ".arrownext",
+    prevArrow: ".arrowprev",
+    responsive: [
+        {
+            breakpoint: 1130,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 737,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 320,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        }
+    ]
+});
 
 let counter = 100;
 function addone() {

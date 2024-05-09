@@ -3,8 +3,8 @@
     --fs-xxsm: 12px;
     --fs-xsm: 14px;
     --fs-sm: 14px;
-    --fs-md: 18px;
-    --fs-mmd: 24px;
+    --fs-md: 16px;
+    --fs-mmd: 20px;
     --fs-lg: 25px;
     --fs-llg: 32px;
     --fs-xl: 38px;
@@ -18,6 +18,7 @@
     --fc-red: #ff1300;
     --fc-secondary-red: #ff0000;
     --fc-brown: #70675f;
+    --fc-regular-brown:#A59A90;
 }
 @media(min-width:576px){
     :root{
@@ -26,6 +27,8 @@
         --fs-lg: 30px;
         --fs-llg: 36px;  
         --fs-sm: 16px;
+        --fs-md: 18px;
+        --fs-mmd: 24px;
     }
 }
 @media(min-width:768px) {

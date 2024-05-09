@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/root.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>the-hustlin-hardos</title>
@@ -173,11 +173,11 @@
         <div class="bordercover1"></div>
         <div class="container">
             <ul class="mb-0 ps-0 d-flex justify-content-center menulist gap-3 gap-lg-0">
-                <li class="borderabout"><a class="about" href="">ABOUT US</a></li>
-                <li class="borderabout"><a class="about" href="">MINTING</a></li>
-                <li class="borderabout"><a class="about" href="">ROADMAP</a></li>
-                <li class="borderabout"><a class="about" href="">TEAM</a></li>
-                <li class="borderabout borderfaq"><a class="about" href="">FAQS</a></li>
+                <li class="borderabout"><a class="about" href="#aboutus">ABOUT US</a></li>
+                <li class="borderabout"><a class="about" href="#minting">MINTING</a></li>
+                <li class="borderabout"><a class="about" href="#roadmap">ROADMAP</a></li>
+                <li class="borderabout"><a class="about" href="#team">TEAM</a></li>
+                <li class="borderabout borderfaq"><a class="about" href="#faqs">FAQS</a></li>
                 <button class="btnconnect d-lg-none d-block">CONNECT WALLET</button>
             </ul>
         </div>
@@ -189,7 +189,7 @@
         <img src="./assets/images/herosectionimage.png" alt="herosection" class="w-100 imageborder">
     </section>
     <!-- BREAKING NEWS -->
-    <section class="backgroundimage">
+    <section class="backgroundimage" id="aboutus">
         <div class="container max-w-1140">
             <div class="d-flex justify-content-center">
                 <h2 class="heading2 mb-0 paddingt paddingb  max-w-1140">“BREAKING NEWS: Hustlin Hardos set to launch the
@@ -308,7 +308,7 @@
         </div>
         <div class="bordercover2"></div>
     </section>
-    <section class="backgroundimage">
+    <section class="backgroundimage" id="minting">
         <div class="max-w-1140 mx-auto px-3 padding-tb">
             <h4 class="minting mb-0">Minting</h4>
         </div>
@@ -391,16 +391,15 @@
         <div class="bordercover2"></div>
     </section>
     <!-- Roadmap -->
-    <section class="backgroundimage">
+    <section class="backgroundimage" id="roadmap">
         <div class="max-w-1140 mx-auto px-3 padding-tb">
             <h4 class="minting mb-0">RoadMap</h4>
         </div>
         <div class="bordercover1"></div>
         <div class="container max-w-1140 ">
             <div class="pb78 containerborder">
-                <div class="timeline pt99">
-                    <!-- <div class="timeline"> -->
-                    <div class="container-2 right d-flex flex-column">
+                <div class="timeline pt99 position-relative">
+                    <div class="container-2 right d-flex flex-column pb-lg-0 pb-4">
                         <p class="phase mb-0">Phase-1</p>
                         <p class="community mb-0">Community Building</p>
                         <p class="phasetext mb-0">The concept of Hustlin’ Hardos was born a few short weeks ago and
@@ -413,9 +412,7 @@
                             channel to see what we are
                             all about!</p>
                     </div>
-                    <!-- </div> -->
-                    <!-- <div class="timeline"> -->
-                    <div class="container-1 left d-flex flex-column ">
+                    <div class="container-1 left d-flex flex-column pb-lg-0 pb-4">
                         <p class="phase mb-0">Phase-2</p>
                         <p class="community mb-0">Minting Event</p>
                         <p class="phasetext mb-0">Hustlin’ Hardos can be minted and are revealed to the world. There
@@ -424,9 +421,7 @@
                             part of your online
                             identity</p>
                     </div>
-                    <!-- </div> -->
-                    <!-- <div class="timeline"> -->
-                    <div class="container-2 right d-flex flex-column">
+                    <div class="container-2 right d-flex flex-column pb-lg-0 pb-4">
                         <p class="phase mb-0">Phase-3</p>
                         <p class="community mb-0">Real-life Raffles</p>
                         <p class="phasetext mb-0">We will be raffling real-life versions of some of the luxury items
@@ -438,9 +433,7 @@
                             announce another similar raffle, where Hustlin’ Hardos will get the chance to win items worn
                             by their favorite NFTs</p>
                     </div>
-                    <!-- </div> -->
-                    <!-- <div class="timeline"> -->
-                    <div class="container-1 left d-flex flex-column">
+                    <div class="container-1 left d-flex flex-column pb-lg-0 pb-4">
                         <p class="phase mb-0">Phase-4</p>
                         <p class="community mb-0">No-Loss Gambling</p>
                         <p class="phasetext mb-0">Each week, we will organize free to enter no-loss gambling, with 25%
@@ -451,9 +444,7 @@
                             can’t lose anything - but you
                             can win BIG!</p>
                     </div>
-                    <!-- </div> -->
-                    <!-- <div class="timeline"> -->
-                    <div class="container-2 right d-flex flex-column">
+                    <div class="container-2 right d-flex flex-column pb-lg-0 pb-4">
                         <p class="phase mb-0">Phase-5</p>
                         <p class="community mb-0">Hustlin’ Hardettes</p>
                         <p class="phasetext mb-0">The ethos of Hustlin’ Hardos is to create an authentic and inclusive
@@ -462,18 +453,14 @@
                             collection to celebrate the
                             Hardettes who are an integral part of this community.</p>
                     </div>
-                    <!-- </div> -->
-                    <!-- <div class="timeline"> -->
-                    <div class="container-1 left d-flex flex-column">
+                    <div class="container-1 left d-flex flex-column pb-lg-0 pb-4">
                         <p class="phase mb-0">Phase-6</p>
                         <p class="community mb-0">Metaverse Integrations</p>
                         <p class="phasetext mb-0">Both our personal and professional lives are increasingly moving
                             online. Your Huslin’ Hardo will become your gateway to
                             this new reality, acting as your 3D avatar in the metaverse</p>
                     </div>
-                    <!-- </div> -->
-                    <!-- <div class="timeline"> -->
-                    <div class="container-2 right d-flex flex-column">
+                    <div class="container-2 right d-flex flex-column pb-lg-0 pb-4">
                         <p class="phase mb-0">Phase-7</p>
                         <p class="community mb-0">Future Developments</p>
                         <p class="phasetext mb-0">It wouldn’t make sense to build one of the best online communities and
@@ -482,23 +469,57 @@
                             priorities of those who made
                             Hustlin’ Hardos a success</p>
                     </div>
-                    <!-- </div> -->
-                    <!-- <div class="timeline"> -->
-                    <div class="container-1 left d-flex flex-column pb-5">
+                    <div class="container-1 left d-flex flex-column  pb-lg-0 pb-5">
                         <p class="phase mb-0">Phase-8</p>
                         <p class="community mb-0">Swapping Individual Attributes</p>
                         <p class="phasetext mb-0">Building a wardrobe app where you can secondary sales</p>
                     </div>
-                    <!-- </div> -->
+                    <div class="downarrow"></div>
                 </div>
             </div>
         </div>
         <div class="bordercover2"></div>
     </section>
-    <section class="backgroundimage">
-        <div class="max-w-1140 mx-auto px-3 padding-tb">
+    <section class="backgroundimage" id="team">
+        <div class="container max-w-1140 padding-tb d-flex align-items-center justify-content-between">
             <h4 class="minting mb-0">Team</h4>
+                    <div class="d-flex gap-5 absolutea rrow align-it ems-center">
+                        <svg class="arrowprev curserpointer d-sm-block d-none" width="23" height="40" viewBox="0 0 23 40" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 2L3 20L21 38" stroke="black" stroke-width="3" />
+                        </svg>
+                        <svg class="arrownext curserpointer d-sm-block d-none" width="23" height="40" viewBox="0 0 23 40" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 2L20 20L2 38" stroke="black" stroke-width="3" />
+                        </svg>
+                    </div>
         </div>
+        <div class="bordercover1"></div>
+        <div class="container max-w-1140">
+            <div class="slider-list2 responsive2">
+                <div class="slider-box-2 sliderbg padding30">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="./assets/images/slider2image.png" alt="slider">
+                    </div>
+                    <p class="hardo mb-0">Executive Hardo</p>
+                    <p class="hardotext mb-0">Crypto startup executive, former VC Investor (US$ 1B+ AuM), former MBB Consultant,</p>
+                </div>
+                <div class="slider-box-2 sliderbg padding30">
+                  <div class="d-flex justify-content-center align-items-center"><img src="./assets/images/slider2image.png" alt="slider"></div>
+                    <p class="banjo mb-0">Johnny Banjo</p>
+                    <p class="hardotext mb-0">The Hustlin’ Hardos have arrived to the metaverse! 9,999 Hardos have taken over. Lorem Ipsum is simply dummy text of the
+                    printing industry.</p>
+                </div>
+            <div class="slider-box-2 sliderbg padding30">
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="./assets/images/slider2image.png" alt="slider">
+                </div>
+                <p class="hardo mb-0">Executive Hardo</p>
+                <p class="hardotext mb-0">Crypto startup executive, former VC Investor (US$ 1B+ AuM), former MBB Consultant,</p>
+            </div>
+            </div>
+        </div>
+        <div class="bordercover1"></div>
     </section>
 
 
