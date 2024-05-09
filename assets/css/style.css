@@ -197,6 +197,7 @@
 .bordercover2 {
     border-bottom: 2px solid var(--fc-black);
 }
+
 /* ==========================================slider================================================= */
 .heading3 {
     color: transparent;
@@ -217,7 +218,7 @@
 .etiam {
     color: var(--fc-black);
     font-family: 'Noto Serif', sans-serif;
-    font-size: 36px;
+    font-size: var(--fs-lg);
     font-weight: 600;
     line-height: 39.85px;
     padding-bottom: 13px;
@@ -227,7 +228,7 @@
 .date {
     color: var(--fc-black);
     font-family: 'Noto Serif', sans-serif;
-    font-size: 14px;
+    font-size: var(--fs-xsm);
     font-weight: 400;
     line-height: 19.07px;
 }
@@ -235,11 +236,15 @@
 .slidertext {
     color: var(--fc-black);
     font-family: 'Noto Serif', sans-serif;
-    font-size: 16px;
+    font-size: var(--fs-sm);
     font-weight: 400;
     line-height: 21.79px;
     padding-top: 13px;
     padding-bottom: 15px;
+}
+
+.slider-box {
+    height: 284px;
 }
 
 .slick-dots {
@@ -258,10 +263,6 @@
     margin-bottom: 0 !important;
 }
 
-.containerright {
-    border-right: 2px solid var(--fc-black);
-}
-
 .borderleftslider {
     border-left: 2px solid var(--fc-black);
 }
@@ -270,7 +271,7 @@
 .minting {
     color: transparent;
     font-family: 'Noto Serif', sans-serif;
-    font-size: 80px;
+    font-size: var(--fs-xl);
     font-weight: 400;
     line-height: 83.2px;
     text-shadow: .5px 0px 2px var(--fc-black);
@@ -283,7 +284,6 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 21.79px;
-    padding-right: 102px;
 }
 
 .number {
@@ -370,7 +370,7 @@
 .community {
     color: var(--fc-black);
     font-family: 'Noto Serif', sans-serif;
-    /* font-size: 36px; */
+    font-size: var(--fs-lg);
     font-weight: 600;
     line-height: 39.85px;
     padding-bottom: 12px;
@@ -533,9 +533,10 @@
     .heading1 {
         line-height: 140.4px;
     }
-        .heading2 {
-            line-height: 70.8px;
-        }
+
+    .heading2 {
+        line-height: 70.8px;
+    }
 
     .container-2::after {
         left: 13px;
@@ -547,26 +548,30 @@
 }
 
 @media(min-width:768px) {
-        .padding-tb {
-                padding-top: 70px;
-                padding-bottom: 70px;
-            }
-    .absolutearrow svg path{
+    .padding-tb {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .absolutearrow svg path {
         stroke-width: 4;
     }
+
     .paddingb {
-            padding-bottom: 64px;
-        }
-    
-        .paddingt {
-            padding-top: 67px;
-        }
+        padding-bottom: 64px;
+    }
+
+    .paddingt {
+        padding-top: 67px;
+    }
+
     .heading1 {
         line-height: 150.4px;
     }
-                        .heading2 {
-                            line-height: 80.8px;
-                        }
+
+    .heading2 {
+        line-height: 80.8px;
+    }
 
     .container-2::after {
         left: 29px;
@@ -578,12 +583,17 @@
 }
 
 @media(min-width:992px) {
+    .mintingtext {
+        max-width: 438px;
+    }
+
     .heading1 {
         line-height: 170.4px;
     }
-                 .heading2 {
-                     line-height: 100.8px;
-                 }
+
+    .heading2 {
+        line-height: 100.8px;
+    }
 
     .borderabout {
         border-left: 2px solid var(--fc-black);
@@ -648,6 +658,10 @@
 }
 
 @media(min-width:1200px) {
+    .containerright {
+        border-right: 2px solid var(--fc-black);
+    }
+
     .heading1 {
         line-height: 188.4px;
     }

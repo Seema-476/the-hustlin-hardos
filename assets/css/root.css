@@ -2,10 +2,10 @@
     /* font-size */
     --fs-xxsm: 12px;
     --fs-xsm: 14px;
-    --fs-sm: 16px;
+    --fs-sm: 14px;
     --fs-md: 18px;
     --fs-mmd: 24px;
-    --fs-lg: 36px;
+    --fs-lg: 25px;
     --fs-llg: 32px;
     --fs-xl: 38px;
     --fs-xxl: 44px;
@@ -21,14 +21,17 @@
 }
 @media(min-width:576px){
     :root{
-        --fs-xxl: 80px;
-        --fs-llg: 36px;
         --fs-xl: 55px;
+        --fs-xxl: 80px;
+        --fs-lg: 30px;
+        --fs-llg: 36px;  
+        --fs-sm: 16px;
     }
 }
 @media(min-width:768px) {
     :root {
         --fs-xxl: 107px;
+        --fs-lg: 36px;
         --fs-llg: 48px;
         --fs-xl: 70px;
     }

@@ -33,7 +33,7 @@ $('.responsive').slick({
             }
         },
         {
-            breakpoint: 745,
+            breakpoint: 737,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
