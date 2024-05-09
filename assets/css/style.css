@@ -520,27 +520,68 @@
 .accordion-button{
     color: var(--fc-black);
     font-family: 'Noto Serif',sans-serif;
-        font-size: 24px;
+        font-size: var(--fs-mmd);
         font-weight: 600;
         line-height: 32.69px;
         text-align: left;
+        background-color: none!important;
+        padding: 32px 32px 43px 30px !important;
+        position: relative;
 }
 .acctext{
     color: var(--fc-black);
         font-family: 'Noto Serif', sans-serif;
-        font-size: 16px;
+        font-size: var(--fs-sm);
         font-weight: 400;
         line-height: 24px;
         text-align: left;
 }
-/* .accordion{
-    background-color: transparent!important;
-} */
+
+.accordion-button:not(.collapsed)::after{
+    background-image: url(../images/minus.png);
+    height: 4px !important;
+    background: var(--fc-black);
+}
+.accordion-button::after {
+    background-image: url(../images/add.png);
+    color: var(--fc-black);
+}
+
+.accordion .accordion-item .accordion-header .accordion-button:focus{
+    padding-bottom: 16px !important;
+}
+
 .accordion-button:not(.collapsed) {
-    color:none !important;
-    background-color: none!important;
+    color:var(--fc-black) !important;
+    background-color: transparent!important;
     box-shadow: none !important;
 }
+.accordion {
+    --bs-accordion-bg: none!important;
+    --bs-accordion-border-radius: 0 !important;
+}
+.accordion-item{
+    border: 2px solid var(--fc-black);
+}
+.accordion-body {
+    padding: 0 25px 24px 25px!important;
+}
+.accordion-button:focus {
+    z-index: 0;
+    outline: 0;
+    box-shadow: none!important;
+}
+.footer{
+    color: var(--fc-black);
+    font-family: 'Noto Serif',sans-serif;
+        font-size: var(--fs-sm);
+        font-weight: 400;
+        line-height: 21.79px;
+        text-align: center;
+        padding-top: 32px;
+        padding-bottom: 24px;
+}
+    
 
 @media(max-width:991.98px) {
     .menulist {
@@ -604,6 +645,9 @@
 }
 
 @media(min-width:576px) {
+    .accordion-body {
+            padding: 0 35px 24px 30px !important;
+        }
     .padding30 {
         padding-top: 56px;
         padding-bottom: 56px;
@@ -641,6 +685,9 @@
 }
 
 @media(min-width:768px) {
+    .accordion-body {
+            padding: 0 90px 24px 30px !important;
+        }
     .container-1 {
         padding-left: 130px;
     }
