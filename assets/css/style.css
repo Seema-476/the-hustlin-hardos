@@ -516,6 +516,31 @@
     border-right: 2px solid var(--fc-black);
     height: 326px;
 }
+/* ========================================= accordian ======================================= */
+.accordion-button{
+    color: var(--fc-black);
+    font-family: 'Noto Serif',sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32.69px;
+        text-align: left;
+}
+.acctext{
+    color: var(--fc-black);
+        font-family: 'Noto Serif', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+}
+/* .accordion{
+    background-color: transparent!important;
+} */
+.accordion-button:not(.collapsed) {
+    color:none !important;
+    background-color: none!important;
+    box-shadow: none !important;
+}
 
 @media(max-width:991.98px) {
     .menulist {
