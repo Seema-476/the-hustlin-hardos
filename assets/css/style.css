@@ -463,49 +463,55 @@
     border-radius: 50%;
     z-index: 1;
 }
+
 /* ================================================= slider 2 ============================================*/
-.hardo{
+.hardo {
     color: var(--fc-brown);
-    font-family: 'Noto Serif',sans-serif;
-        font-size: var(--fs-lg);
-        font-weight: 900;
-        line-height: 49.03px;
-        text-align: center;
-        padding-top: 16px;
-        text-shadow: 1px 1px 2px var(--fc-white);
+    font-family: 'Noto Serif', sans-serif;
+    font-size: var(--fs-lg);
+    font-weight: 900;
+    line-height: 49.03px;
+    text-align: center;
+    padding-top: 16px;
+    text-shadow: 1px 1px 2px var(--fc-white);
 }
-.sliderbg{
+
+.sliderbg {
     background-image: url(../images/sliderbg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.hardotext{
+
+.hardotext {
     color: var(--fc-black);
-    font-family: 'Noto Serif',sans-serif;
-        font-size: var(--fs-sm);
-        font-weight: 400;
-        line-height: 21.79px;
-        text-align: center;
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-top: 10px;
+    font-family: 'Noto Serif', sans-serif;
+    font-size: var(--fs-sm);
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
 }
-.banjo{
+
+.banjo {
     color: var(--fc-regular-brown);
-font-family: 'Noto Serif', sans-serif;
-        font-size: var(--fs-lg);
-        font-weight: 900;
-        line-height: 49.03px;
-        text-align: center;
-        padding-top: 16px;
-        text-shadow: 1px 1px 2px var(--fc-white);
+    font-family: 'Noto Serif', sans-serif;
+    font-size: var(--fs-lg);
+    font-weight: 900;
+    line-height: 49.03px;
+    text-align: center;
+    padding-top: 16px;
+    text-shadow: 1px 1px 2px var(--fc-white);
 }
-.padding30{
+
+.padding30 {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.slider-box-2{
+
+.slider-box-2 {
     border-left: 2px solid var(--fc-black);
     border-right: 2px solid var(--fc-black);
     height: 326px;
@@ -574,14 +580,16 @@ font-family: 'Noto Serif', sans-serif;
 
 @media(min-width:576px) {
     .padding30 {
-            padding-top: 56px;
-            padding-bottom: 56px;
-        }
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+
     .hardotext {
-            padding-left: 81px;
-            padding-right: 81px;
-            padding-top: 16px;
-        }
+        padding-left: 81px;
+        padding-right: 81px;
+        padding-top: 16px;
+    }
+
     .container-1 {
         padding-left: 100px;
     }
@@ -622,6 +630,10 @@ font-family: 'Noto Serif', sans-serif;
     }
 
     .absolutearrow svg path {
+        stroke-width: 4;
+    }
+
+    .sliderarrow svg path {
         stroke-width: 4;
     }
 
