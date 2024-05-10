@@ -10,7 +10,7 @@ $('.responsive').slick({
     dots: false,
     infinite: true,
     speed: 300,
-    // autoplay: true, 
+    autoplay: true, 
     slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: ".btnnext",

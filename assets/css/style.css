@@ -111,6 +111,11 @@
     line-height: 21.79px;
     padding-left: 24px;
     padding-right: 24px;
+    transition: all 300ms linear;
+}
+
+.about:hover {
+    text-shadow: 0 0 .65px var(--fc-black), 0 0 .65px var(--fc-black);
 }
 
 .max-w-1320 {
@@ -184,6 +189,12 @@
     border: none;
     border-bottom: 2px solid var(--fc-black);
     background: none;
+    transition: all 300ms linear;
+}
+
+.btnreadmore:hover {
+    scale: .95;
+    text-shadow: 0 0 .65px var(--fc-black), 0 0 .65px var(--fc-black);
 }
 
 .max-w570 {
@@ -317,6 +328,10 @@
     padding: 12px 16px;
     border: 2px solid var(--fc-black);
     margin-top: 35px;
+    transition: all 300ms linear;
+}
+.mintnow:hover{
+        scale: .95;
 }
 
 .timeleft {
@@ -405,11 +420,11 @@
 }
 
 .pt99 {
-    padding-top: 99px;
+    padding-top: 40px;
 }
 
 .pb78 {
-    padding-bottom: 78px;
+    padding-bottom: 40px;
 }
 
 .containerborder {
@@ -516,77 +531,85 @@
     border-right: 2px solid var(--fc-black);
     height: 326px;
 }
+
 /* ========================================= accordian ======================================= */
-.accordion-button{
+.accordion-button {
     color: var(--fc-black);
-    font-family: 'Noto Serif',sans-serif;
-        font-size: var(--fs-mmd);
-        font-weight: 600;
-        line-height: 32.69px;
-        text-align: left;
-        background-color: none!important;
-        padding: 32px 32px 43px 30px !important;
-        position: relative;
-}
-.bordertop{
-    border-top: 2px solid var(--fc-black);
-}
-.acctext{
-    color: var(--fc-black);
-        font-family: 'Noto Serif', sans-serif;
-        font-size: var(--fs-sm);
-        font-weight: 400;
-        line-height: 24px;
-        text-align: left;
+    font-family: 'Noto Serif', sans-serif;
+    font-size: var(--fs-mmd);
+    font-weight: 600;
+    line-height: 32.69px;
+    text-align: left;
+    background-color: none !important;
+    padding: 32px 32px 43px 30px !important;
+    position: relative;
 }
 
-.accordion-button:not(.collapsed)::after{
+.bordertop {
+    border-top: 2px solid var(--fc-black);
+}
+
+.acctext {
+    color: var(--fc-black);
+    font-family: 'Noto Serif', sans-serif;
+    font-size: var(--fs-sm);
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.accordion-button:not(.collapsed)::after {
     background-image: url(../images/minus.png);
     height: 4px !important;
     background: var(--fc-black);
 }
+
 .accordion-button::after {
     background-image: url(../images/add.png);
     color: var(--fc-black);
 }
 
-.accordion .accordion-item .accordion-header .accordion-button.active{
+.accordion .accordion-item .accordion-header .accordion-button.active {
     padding-bottom: 16px !important;
 }
 
 .accordion-button:not(.collapsed) {
-    color:var(--fc-black) !important;
-    background-color: transparent!important;
+    color: var(--fc-black) !important;
+    background-color: transparent !important;
     box-shadow: none !important;
 }
+
 .accordion {
-    --bs-accordion-bg: none!important;
+    --bs-accordion-bg: none !important;
     --bs-accordion-border-radius: 0 !important;
 }
-.accordion-item{
+
+.accordion-item {
     border-right: 2px solid var(--fc-black);
     border-left: 2px solid var(--fc-black);
 }
+
 .accordion-body {
-    padding: 0 25px 24px 25px!important;
+    padding: 0 25px 24px 25px !important;
 }
+
 .accordion-button:focus {
     z-index: 0;
     outline: 0;
-    box-shadow: none!important;
+    box-shadow: none !important;
 }
 
-.footer{
+.footer {
     color: var(--fc-black);
-    font-family: 'Noto Serif',sans-serif;
-        font-size: var(--fs-sm);
-        font-weight: 400;
-        line-height: 21.79px;
-        text-align: center;
-        padding-top: 32px;
-        padding-bottom: 24px;
+    font-family: 'Noto Serif', sans-serif;
+    font-size: var(--fs-sm);
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 24px;
 }
-    
+
 
 @media(max-width:991.98px) {
     .menulist {
@@ -651,8 +674,9 @@
 
 @media(min-width:576px) {
     .accordion-body {
-            padding: 0 35px 24px 30px !important;
-        }
+        padding: 0 35px 24px 30px !important;
+    }
+
     .padding30 {
         padding-top: 56px;
         padding-bottom: 56px;
@@ -691,8 +715,9 @@
 
 @media(min-width:768px) {
     .accordion-body {
-            padding: 0 90px 24px 30px !important;
-        }
+        padding: 0 90px 24px 30px !important;
+    }
+
     .container-1 {
         padding-left: 130px;
     }
@@ -740,6 +765,14 @@
 }
 
 @media(min-width:992px) {
+    .pt99 {
+        padding-top: 90px;
+    }
+
+    .pb78 {
+        padding-bottom: 78px;
+    }
+
     .downarrow {
         border: 1px solid var(--fc-black);
         border-width: 0 2px 2px 0;
