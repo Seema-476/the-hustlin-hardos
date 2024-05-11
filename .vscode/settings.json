@@ -1,5 +1,5 @@
 {
     "html-css-class-completion.enableEmmetSupport": true,
     "html-css-class-completion.excludeGlobPattern": "enable",
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5502
 }

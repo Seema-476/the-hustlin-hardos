@@ -85,7 +85,7 @@
 }
 
 .translate:hover {
-    transform: translateY(-7px);
+    transform: translateY(-4px);
 }
 
 .btnconnect {
@@ -144,7 +144,7 @@
     font-family: 'Noto Serif', sans-serif;
     font-size: var(--fs-llg);
     font-weight: 400;
-    line-height: 60.8px;
+    line-height: 55.8px;
     text-shadow: .5px 0px 2px var(--fc-black);
     -webkit-text-stroke: 1px var(--fc-black);
 }
@@ -572,8 +572,8 @@
 .accordion-button::after {
     background-image: url(../images/add.png);
     transition: none !important;
-    width: 20px;
-    height: 22px;
+    width: 19px;
+    height: 18px;
 }
 
 .accordion-button:not(.collapsed) {
@@ -659,7 +659,7 @@
 
     .menuicon {
         width: 30px;
-        height: 30px;
+        height: 25px;
         position: relative;
         display: flex;
         align-items: center;
@@ -736,7 +736,7 @@
     }
 
     .heading2 {
-        line-height: 70.8px;
+        line-height: 65.8px;
     }
 
     .container-2::after {
@@ -752,6 +752,10 @@
     .accordion-body {
         padding: 0 90px 24px 30px !important;
     }
+        .padding-tb {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
 
     .container-1 {
         padding-left: 130px;
@@ -759,11 +763,6 @@
 
     .container-2 {
         padding-left: 130px;
-    }
-
-    .padding-tb {
-        padding-top: 70px;
-        padding-bottom: 70px;
     }
 
     .absolutearrow svg path {
@@ -800,6 +799,10 @@
 }
 
 @media(min-width:992px) {
+    .padding-tb {
+            padding-top: 89px;
+            padding-bottom: 90px;
+        }
     .pt99 {
         padding-top: 90px;
     }
