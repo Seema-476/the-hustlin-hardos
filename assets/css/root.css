@@ -14,23 +14,26 @@
     --fc-white: #ffffff;
     --fc-black: #000000;
     --fc-yellow: #ffd600;
+    --fc-light-yellow: #f7f2e3;
     --fc-green: #00a106;
     --fc-red: #ff1300;
     --fc-secondary-red: #ff0000;
     --fc-brown: #70675f;
-    --fc-regular-brown:#A59A90;
+    --fc-regular-brown: #A59A90;
 }
-@media(min-width:576px){
-    :root{
+
+@media(min-width:576px) {
+    :root {
         --fs-xl: 55px;
         --fs-xxl: 80px;
         --fs-lg: 30px;
-        --fs-llg: 36px;  
+        --fs-llg: 36px;
         --fs-sm: 16px;
         --fs-md: 18px;
         --fs-mmd: 24px;
     }
 }
+
 @media(min-width:768px) {
     :root {
         --fs-xxl: 107px;
@@ -39,6 +42,7 @@
         --fs-xl: 70px;
     }
 }
+
 @media(min-width:992px) {
     :root {
         --fs-xxl: 130px;
@@ -46,6 +50,7 @@
         --fs-xl: 80px;
     }
 }
+
 @media(min-width:1200px) {
     :root {
         --fs-xxl: 157px;

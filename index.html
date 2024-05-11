@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-                integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/root.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/images/slider2image.png">
     <title>the-hustlin-hardos</title>
 </head>
 
@@ -57,7 +58,7 @@
     <header class="backgroundimage mt-top">
         <div class="d-flex justify-content-between align-items-center max-w-1140 container pb-4 pt-3 d-lg-none d-block">
             <p class="hustlin mb-0  pe-0">Hustlin' Hardos</p>
-            <div class="menuicon">
+            <div class="menuicon" onclick="opennav()">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -172,13 +173,13 @@
         </div>
         <div class="bordercover1"></div>
         <div class="container">
-            <ul class="mb-0 ps-0 d-flex justify-content-center menulist gap-3 gap-lg-0">
-                <li class="borderabout"><a class="about" href="#aboutus">ABOUT US</a></li>
-                <li class="borderabout"><a class="about" href="#minting">MINTING</a></li>
-                <li class="borderabout"><a class="about" href="#roadmap">ROADMAP</a></li>
-                <li class="borderabout"><a class="about" href="#team">TEAM</a></li>
-                <li class="borderabout borderfaq"><a class="about" href="#faqs">FAQS</a></li>
-                <button class="btnconnect d-lg-none d-block">CONNECT WALLET</button>
+            <ul class="mb-0 ps-0 d-flex justify-content-center menulist gap-3 gap-lg-0" id="navlist">
+                <li class="borderabout"><a class="about" onclick="opennav()" href="#aboutus">ABOUT US</a></li>
+                <li class="borderabout"><a class="about" onclick="opennav()" href="#minting">MINTING</a></li>
+                <li class="borderabout"><a class="about" onclick="opennav()" href="#roadmap">ROADMAP</a></li>
+                <li class="borderabout"><a class="about" onclick="opennav()" href="#team">TEAM</a></li>
+                <li class="borderabout borderfaq"><a class="about" onclick="opennav()" href="#faqs">FAQS</a></li>
+                <li><button class="btnconnect d-lg-none d-block">CONNECT WALLET</button></li>
             </ul>
         </div>
         <div class="bordercover2 d-lg-block d-none"></div>
@@ -236,12 +237,12 @@
         <div class="padding-tb d-flex justify-content-between max-w-1140 mx-auto px-3">
             <h3 class="heading3 mb-0">Latest Tweets</h3>
             <div class="d-flex gap-5 align-items-center">
-                <svg class="btnprev curserpointer d-sm-block d-none" width="23" height="40" viewBox="0 0 23 40" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
+                <svg class="btnprev curserpointer d-sm-block d-none" width="23" height="40" viewBox="0 0 23 40"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21 2L3 20L21 38" stroke="black" stroke-width="3" />
                 </svg>
-                <svg class="btnnext curserpointer d-sm-block d-none" width="23" height="40" viewBox="0 0 23 40" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
+                <svg class="btnnext curserpointer d-sm-block d-none" width="23" height="40" viewBox="0 0 23 40"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2 2L20 20L2 38" stroke="black" stroke-width="3" />
                 </svg>
             </div>
@@ -259,7 +260,8 @@
                         </svg>
                         <p class="date mb-0">23/02/2022</p>
                     </div>
-                    <p class="slidertext mb-0">Diam tellus arcu, amet ornare nulla ut scelerisque et. Cum porta ultrices quam in.</p>
+                    <p class="slidertext mb-0">Diam tellus arcu, amet ornare nulla ut scelerisque et. Cum porta ultrices
+                        quam in.</p>
                     <button class="btnreadmore mb-5">Read More...</button>
                 </div>
                 <div class="slider-box borderleftslider px-lg-3 px-md-3 px-sm-4 px-3">
@@ -272,7 +274,8 @@
                         </svg>
                         <p class="date mb-0">22/02/2022</p>
                     </div>
-                    <p class="slidertext mb-0">Tortor dolor ultrices mauris in aliquam feugiat amet ultrices in facilisi.
+                    <p class="slidertext mb-0">Tortor dolor ultrices mauris in aliquam feugiat amet ultrices in
+                        facilisi.
                         Venenatis.</p>
                     <button class="btnreadmore mb-5">Read More...</button>
                 </div>
@@ -358,36 +361,36 @@
             </div>
         </div>
         <div class="bordercover2"></div>
-     <div>
-        <div class="container max-w-1140">
-            <div class="row">
-                <div class="col-md-3 col-sm-4 col-6 d-flex justify-content-center">
-                    <div class="py-4">
-                        <p class="eget mb-0">Etiam eget</p>
-                        <p class="egetno mb-0">42</p>
+        <div>
+            <div class="container max-w-1140">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 col-6 d-flex justify-content-center">
+                        <div class="py-4">
+                            <p class="eget mb-0">Etiam eget</p>
+                            <p class="egetno mb-0">42</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-6 d-flex justify-content-center">
-                    <div class="py-4">
-                        <p class="eget mb-0">Etiam eget</p>
-                        <p class="egetno mb-0">42</p>
+                    <div class="col-md-3 col-sm-4 col-6 d-flex justify-content-center">
+                        <div class="py-4">
+                            <p class="eget mb-0">Etiam eget</p>
+                            <p class="egetno mb-0">42</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-6 d-flex justify-content-center">
-                    <div class="py-4">
-                        <p class="eget mb-0">Etiam eget</p>
-                        <p class="egetno mb-0">42</p>
+                    <div class="col-md-3 col-sm-4 col-6 d-flex justify-content-center">
+                        <div class="py-4">
+                            <p class="eget mb-0">Etiam eget</p>
+                            <p class="egetno mb-0">42</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-4 col-6  d-flex justify-content-center">
-                    <div class="py-4">
-                        <p class="eget mb-0">Etiam eget</p>
-                        <p class="egetno mb-0">42</p>
+                    <div class="col-md-3 col-sm-4 col-6  d-flex justify-content-center">
+                        <div class="py-4">
+                            <p class="eget mb-0">Etiam eget</p>
+                            <p class="egetno mb-0">42</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-     </div>
         <div class="bordercover2"></div>
     </section>
     <!-- Roadmap -->
@@ -480,19 +483,20 @@
         </div>
         <div class="bordercover2"></div>
     </section>
+    <!-- slider 2 -->
     <section class="backgroundimage" id="team">
         <div class="container max-w-1140 padding-tb d-flex align-items-center justify-content-between">
             <h4 class="minting mb-0">Team</h4>
-                    <div class="d-flex gap-5 sliderarrow">
-                        <svg class="arrowprev curserpointer d-sm-block d-none" width="23" height="40" viewBox="0 0 23 40" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21 2L3 20L21 38" stroke="black" stroke-width="3" />
-                        </svg>
-                        <svg class="arrownext curserpointer d-sm-block d-none" width="23" height="40" viewBox="0 0 23 40" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2 2L20 20L2 38" stroke="black" stroke-width="3" />
-                        </svg>
-                    </div>
+            <div class="d-flex gap-5 sliderarrow">
+                <svg class="arrowprev curserpointer d-sm-block d-none" width="23" height="40" viewBox="0 0 23 40"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 2L3 20L21 38" stroke="black" stroke-width="3" />
+                </svg>
+                <svg class="arrownext curserpointer d-sm-block d-none" width="23" height="40" viewBox="0 0 23 40"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 2L20 20L2 38" stroke="black" stroke-width="3" />
+                </svg>
+            </div>
         </div>
         <div class="bordercover1"></div>
         <div class="container max-w-1140">
@@ -502,94 +506,111 @@
                         <img src="./assets/images/slider2image.png" alt="slider">
                     </div>
                     <p class="hardo mb-0">Executive Hardo</p>
-                    <p class="hardotext mb-0">Crypto startup executive, former VC Investor (US$ 1B+ AuM), former MBB Consultant,</p>
+                    <p class="hardotext mb-0">Crypto startup executive, former VC Investor (US$ 1B+ AuM), former MBB
+                        Consultant,</p>
                 </div>
                 <div class="slider-box-2 sliderbg padding30">
-                  <div class="d-flex justify-content-center align-items-center"><img src="./assets/images/slider2image.png" alt="slider"></div>
+                    <div class="d-flex justify-content-center align-items-center"><img
+                            src="./assets/images/slider2image.png" alt="slider"></div>
                     <p class="banjo mb-0">Johnny Banjo</p>
-                    <p class="hardotext mb-0">The Hustlin’ Hardos have arrived to the metaverse! 9,999 Hardos have taken over. Lorem Ipsum is simply dummy text of the
-                    printing industry.</p>
+                    <p class="hardotext mb-0">The Hustlin’ Hardos have arrived to the metaverse! 9,999 Hardos have taken
+                        over. Lorem Ipsum is simply dummy text of the
+                        printing industry.</p>
                 </div>
-            <div class="slider-box-2 sliderbg padding30">
-                <div class="d-flex justify-content-center align-items-center">
-                    <img src="./assets/images/slider2image.png" alt="slider">
+                <div class="slider-box-2 sliderbg padding30">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="./assets/images/slider2image.png" alt="slider">
+                    </div>
+                    <p class="hardo mb-0">Executive Hardo</p>
+                    <p class="hardotext mb-0">Crypto startup executive, former VC Investor (US$ 1B+ AuM), former MBB
+                        Consultant,</p>
                 </div>
-                <p class="hardo mb-0">Executive Hardo</p>
-                <p class="hardotext mb-0">Crypto startup executive, former VC Investor (US$ 1B+ AuM), former MBB Consultant,</p>
-            </div>
             </div>
         </div>
         <div class="bordercover1"></div>
     </section>
+    <!-- accordian -->
     <section class="backgroundimage" id="faqs">
         <div class="container max-w-1140">
             <h4 class="minting mb-0 padding-tb">FAQs</h4>
         </div>
         <div class="bordercover1"></div>
-            <div class="container max-w-1140">
+        <div class="container max-w-1140">
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button mb-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                            aria-expanded="true" aria-controls="collapseOne">
+                        <button class="accordion-button mb-0" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             What is an NFT?
                         </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                                <p class="acctext mb-0">NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with
-                                    blockchain-managed ownership that
-                                    users can buy, own, and trade. Some NFT’s fundamental function is to be digital art. But they can also offer
-                                    additional
-                                    benefits like exclusive access to websites, event tickets, game items, and ownership records for physical objects.
-                                    Think
-                                    of it as a unique piece of art that can also work as a “members-only” card. Hustlin' Hardos works like this</p>
+                            <p class="acctext mb-0">NFT stands for “Non-fungible token,” which means that it’s a unique,
+                                digital item with
+                                blockchain-managed ownership that
+                                users can buy, own, and trade. Some NFT’s fundamental function is to be digital art. But
+                                they can also offer
+                                additional
+                                benefits like exclusive access to websites, event tickets, game items, and ownership
+                                records for physical objects.
+                                Think
+                                of it as a unique piece of art that can also work as a “members-only” card. Hustlin'
+                                Hardos works like this</p>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button bordertop mb-0 collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <button class="accordion-button bordertop mb-0 collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
                             How do I get an NFT?
                         </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <p class="acctext mb-0">NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with
+                            <p class="acctext mb-0">NFT stands for “Non-fungible token,” which means that it’s a unique,
+                                digital item with
                                 blockchain-managed ownership that
-                                users can buy, own, and trade. Some NFT’s fundamental function is to be digital art. But they can also offer
+                                users can buy, own, and trade. Some NFT’s fundamental function is to be digital art. But
+                                they can also offer
                                 additional
-                                benefits like exclusive access to websites, event tickets, game items, and ownership records for physical objects.</p>
+                                benefits like exclusive access to websites, event tickets, game items, and ownership
+                                records for physical objects.</p>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button bordertop mb-0 collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        How much is a Hustlin' Hardo NFT?
+                        <button class="accordion-button bordertop mb-0 collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            How much is a Hustlin' Hardo NFT?
                         </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                                <p class="acctext mb-0">NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with
-                                    blockchain-managed ownership that
-                                    users can buy, own, and trade. 
-                                </p>
+                            <p class="acctext mb-0">NFT stands for “Non-fungible token,” which means that it’s a unique,
+                                digital item with
+                                blockchain-managed ownership that
+                                users can buy, own, and trade.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button bordertop mb-0 collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                        <button class="accordion-button bordertop mb-0 collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false"
+                            aria-controls="collapsefour">
                             Where can I mint a Hustlin' Hardos NFT?
                         </button>
                     </h2>
                     <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <p class="acctext mb-0">NFT stands for “Non-fungible token,” which means that it’s a unique, digital item
+                            <p class="acctext mb-0">NFT stands for “Non-fungible token,” which means that it’s a unique,
+                                digital item
                                 with
                                 blockchain-managed ownership that
                                 users can buy, own, and trade.
@@ -599,14 +620,16 @@
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button bordertop mb-0 collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
-                        How do I mint a Hustlin' Hardo NFT?
+                        <button class="accordion-button bordertop mb-0 collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false"
+                            aria-controls="collapsefive">
+                            How do I mint a Hustlin' Hardo NFT?
                         </button>
                     </h2>
                     <div id="collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <p class="acctext mb-0">NFT stands for “Non-fungible token,” which means that it’s a unique, digital item
+                            <p class="acctext mb-0">NFT stands for “Non-fungible token,” which means that it’s a unique,
+                                digital item
                                 with
                                 blockchain-managed ownership that
                                 users can buy, own, and trade.
@@ -616,14 +639,16 @@
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button bordertop mb-0 collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                        <button class="accordion-button bordertop mb-0 collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false"
+                            aria-controls="collapsesix">
                             How many Hustlin' Hardos NFTs will there be?
                         </button>
                     </h2>
                     <div id="collapsesix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <p class="acctext mb-0">NFT stands for “Non-fungible token,” which means that it’s a unique, digital item
+                            <p class="acctext mb-0">NFT stands for “Non-fungible token,” which means that it’s a unique,
+                                digital item
                                 with
                                 blockchain-managed ownership that
                                 users can buy, own, and trade.
@@ -633,14 +658,16 @@
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button bordertop mb-0 collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
+                        <button class="accordion-button bordertop mb-0 collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseseven" aria-expanded="false"
+                            aria-controls="collapseseven">
                             What is the utility and functionality of a Hustlin' Hardo NFT?
                         </button>
                     </h2>
                     <div id="collapseseven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <p class="acctext mb-0">NFT stands for “Non-fungible token,” which means that it’s a unique, digital item
+                            <p class="acctext mb-0">NFT stands for “Non-fungible token,” which means that it’s a unique,
+                                digital item
                                 with
                                 blockchain-managed ownership that
                                 users can buy, own, and trade.
@@ -651,11 +678,16 @@
             </div>
         </div>
         <div class="bordercover1"></div>
-        <p class="footer mb-0">© Hustlin' Hardos 2022</p>
+        <p class="footer mb-0">© Hustlin' Hardos 2024</p>
+        <div class="topBtn d-flex align-items-center justify-content-center">
+            <svg width="32" height="32" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_45444_1127)">
+                    <path d="M27.0835 25.0007V41.6673H22.9168V25.0007H8.3335L25.0002 8.33398L41.6668 25.0007H27.0835Z"
+                        fill="#f7f2e3" />
+                </g>
+            </svg>
+        </div>
     </section>
-
-
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -668,5 +700,4 @@
         crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
 </body>
-
 </html>

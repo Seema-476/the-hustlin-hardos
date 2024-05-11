@@ -1,16 +1,33 @@
-const menuicon = document.querySelector(".menuicon");
-const menulist = document.querySelector(".menulist");
-menuicon.addEventListener("click", function () {
-    menulist.classList.toggle("show")
-    menuicon.classList.toggle("cross")
+// const menuicon = document.querySelector(".menuicon");
+// const menulist = document.querySelector(".menulist");
+// menuicon.addEventListener("click", function () {
+//     menulist.classList.toggle("show")
+//     menuicon.classList.toggle("cross")
+//     document.body.classList.toggle("overflowhidden")
+// })
+function opennav() {
+    document.getElementById("navlist").classList.toggle("start-0");
+    document.querySelector(".menuicon").classList.toggle("cross");
     document.body.classList.toggle("overflowhidden")
+}
+const topBtn = document.querySelector(".topBtn")
+
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 60) {
+        topBtn.classList.add("show")
+    } else {
+        topBtn.classList.remove("show");
+    }
+})
+topBtn.addEventListener("click", function () {
+    document.documentElement.scrollTop = 0;
 })
 
 $('.responsive').slick({
     dots: false,
     infinite: true,
     speed: 300,
-    autoplay: true, 
+    autoplay: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: ".btnnext",
@@ -52,7 +69,7 @@ $('.responsive2').slick({
     dots: false,
     infinite: true,
     speed: 300,
-    autoplay: true, 
+    autoplay: true,
     slidesToShow: 2,
     slidesToScroll: 1,
     nextArrow: ".arrownext",
